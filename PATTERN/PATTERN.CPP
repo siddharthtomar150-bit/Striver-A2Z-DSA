@@ -199,12 +199,29 @@ void print16(int n){
   }
 }
 
-
+void print17(int n){
+  char ch;
+  for(int i=0;i<n;i++){
+    //space
+    for(int j=0;j<n-i;j++){
+      cout<<" ";
+    }
+    //left side
+    for(int j=0;j<=i;j++){
+      cout<<char('A'+j);
+    }
+    //right side
+    for(int j=i-1;j>=0;j--){
+      cout<<char('A'+j);
+    }
+    cout<<endl;
+  }
+}
 
   int main(){
     int n;
     cin>>n;
-    print16(n);
+    print17(n);
     
   return 0;
 }
