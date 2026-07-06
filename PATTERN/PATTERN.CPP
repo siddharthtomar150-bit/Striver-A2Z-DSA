@@ -176,11 +176,22 @@ void print14(int n){
     cout<<endl;
   }
 }
+void print15(int n){
+  char ch;
+  for(int i=1;i<=n;i++){
+    for(int j=1;j<=n-i+1;j++){
+      cout<<char('A'+j-1);
+      
+    }
+    cout<<endl;
+  }
+}
+
 
   int main(){
     int n;
     cin>>n;
-    print14(n);
+    print15(n);
     
   return 0;
 }
