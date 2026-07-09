@@ -218,8 +218,10 @@ void print17(int n){
   }
 }
 
+
   int main(){
     int n;
+    cout<<"Enter a number=";
     cin>>n;
     print17(n);
     
