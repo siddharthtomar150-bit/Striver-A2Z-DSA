@@ -279,7 +279,40 @@ void print19(int n)
         cout << endl;
     }
 }
-
+void print20(int n) {
+    //upper
+    for(int i=1;i<=n;i++){
+        //left star
+        for(int j=0;j<i;j++){
+            cout<<"*";
+        }
+        //space
+        for(int j=0;j<2*(n-i);j++){
+            cout<<" ";
+        }
+        //right star
+        for(int j=0;j<i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+    
+     for(int i=1;i<n;i++){
+        //left star
+        for(int j=0;j<n-i;j++){
+            cout<<"*";
+        }
+        //space
+        for(int j=0;j<2*i;j++){
+            cout<<" ";
+        }
+        //right star
+        for(int j=0;j<n-i;j++){
+            cout<<"*";
+        }
+        cout<<endl;
+    }
+}
 
 
 
@@ -288,7 +321,7 @@ int main(){
     int n;
     cout<<"Enter a number=";
     cin>>n;
-    print19(n);
+    print21(n);
     
   return 0;
 }
