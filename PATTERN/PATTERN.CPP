@@ -200,7 +200,6 @@ void print16(int n){
 }
 
 void print17(int n){
-  char ch;
   for(int i=0;i<n;i++){
     //space
     for(int j=0;j<n-i;j++){
@@ -217,13 +216,79 @@ void print17(int n){
     cout<<endl;
   }
 }
+ void print18(int n){
+ for (int i = 1; i <= n; i++) {
+
+        char ch = 'A' + (n - i);
+
+        for (int j = 1; j <= i; j++) {
+            cout << ch << " ";
+            ch++;
+        }
+        cout<<endl;
+      }
+    }
+
+void print19(int n)
+{
+    // Upper Half
+    for (int i = 1; i <= n; i++)
+    {
+        // Left Stars
+        for (int j = 1; j <= n - i + 1; j++)
+        {
+            cout << "*";
+        }
+
+        // Spaces
+        for (int j = 1; j <= 2 * (i - 1); j++)
+        {
+            cout << " ";
+        }
+
+        // Right Stars
+        for (int j = 1; j <= n - i + 1; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+
+    // Lower Half
+    for (int i = 1; i <= n; i++)
+    {
+        // Left Stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        // Spaces
+        for (int j = 1; j <= 2 * (n - i); j++)
+        {
+            cout << " ";
+        }
+
+        // Right Stars
+        for (int j = 1; j <= i; j++)
+        {
+            cout << "*";
+        }
+
+        cout << endl;
+    }
+}
 
 
-  int main(){
+
+
+
+int main(){
     int n;
     cout<<"Enter a number=";
     cin>>n;
-    print17(n);
+    print19(n);
     
   return 0;
 }
