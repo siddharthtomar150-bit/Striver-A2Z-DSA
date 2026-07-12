@@ -40,13 +40,6 @@
          vector<int>v1(5,20);
          vector<int>v2(v1);
          cout<<v2[1]<<" "<<v2[0]<<" "<<v2[3]<<endl;
-          
-
-   
-          
-
-
-
         
      return 0;
      }                                                        
