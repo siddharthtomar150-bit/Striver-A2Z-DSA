@@ -1,7 +1,7 @@
      #include<iostream>
      #include<vector>
      using namespace std;
-    void vec(){
+ void vec(){
     vector<int>v;
        v.push_back(5);
            v.push_back(7);
@@ -9,11 +9,39 @@
            cout<<"size of vec:"<<v.size()<<" "<<endl;
            cout<<v[1]<<" ";
            cout<<v[2]<<endl;
+          }
+   void v(){
+           vector<int> a={20,30,40,50};
            
+           cout<<"size is="<<a.size()<<endl;
+           for(int i=0;i<a.size();i++){
+          cout<<a[i]<<" ";
+           }
+            cout<<endl;
+   }
+        //ye vector ke last element ko remove krta ha[push_back()]
+  void r(){
+    vector<int> s={5,10,15,20};
+    s.pop_back();
+    for(int i=0;i<s.size();i++){
+      cout<<s[i]<<" ";
+    }
+    cout<<endl;
+   }
+   //vector ka first element return karrta hai[front()]
+  void p(){
+    vector<int> ar={10,20,5};
+    cout<<ar.front()<<endl;
+    cout<<ar.back()<<endl;
 
     }
 
-      int main(){
+    
+
+ int main(){
+        v();
+        r();
+        p();
          vector<int>v;//empty vector
              v.push_back(20);//element vector
              v.push_back(30);
@@ -40,6 +68,8 @@
          vector<int>v1(5,20);
          vector<int>v2(v1);
          cout<<v2[1]<<" "<<v2[0]<<" "<<v2[3]<<endl;
+
+         
         
      return 0;
      }                                                        
